@@ -39,7 +39,7 @@ function Home() {
       <h2>Activities</h2>
       <ul>
         {activities.map((activity) => (
-          <li key={activity.id}>
+          <li className="camper-li" key={activity.id}>
             <span>
               {activity.name} | Difficulty: {activity.difficulty}
             </span>
@@ -53,11 +53,15 @@ function Home() {
       <h2>Campers</h2>
       <ul>
         {campers.map((camper) => (
-          <li key={camper.id}>
+          <li className="camper-li" key={camper.id}>
             <span>
               {camper.name}, age {camper.age}
             </span>
-            <Link to={`/campers/${camper.id}`}>View Activities</Link>
+            <span className="activity">
+              <button>
+              <Link className="activity-link" to={`/campers/${camper.id}`}>View Activities</Link>
+              </button>
+            </span>
           </li>
         ))}
       </ul>

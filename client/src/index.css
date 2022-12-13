@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: beige;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+
+}
+
+.age-input {
+  margin-left: 14px;
+}
+
+.activity{
+  background-color: grey;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.activity-link{
+  text-decoration: none;
+  color: black;
+
+}
+
+.camper-li{
+  margin-top: 5px;
+}
+

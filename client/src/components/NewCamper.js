@@ -35,7 +35,7 @@ function NewCamper({ onAddCamper }) {
     <form onSubmit={handleSubmit}>
       <h2>Add New Camper</h2>
       <div>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Name </label>
         <input
           type="text"
           id="name"
@@ -44,8 +44,9 @@ function NewCamper({ onAddCamper }) {
         />
       </div>
       <div>
-        <label htmlFor="age">Age</label>
+        <label htmlFor="age">Age </label>
         <input
+        className="age-input"
           type="number"
           id="age"
           value={age}
